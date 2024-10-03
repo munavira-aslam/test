@@ -6,22 +6,21 @@
 </head>
 
 <body>
-  <h1>Introduction to JavaScript 
+  <h1> JavaScript operators
   </h1>
+  <p> id="result"
+  </p>
   
-  <button onclick="greet()"> cilck me</button>
   <script>
-  alert ("login to a new page");
-  let userInput=prompt("please enter your name:");
-   if (userInput !== null)
-  {
-  alert("login to a new page," + " userInput +"!");
-   }
-   else {
-  alert("you didn't enter your name.");
-   
- }
-
+  //arithmetic operators //
+  let num1= 10;
+  let num2= 5;
+  let sum = num1 + num2;
+  document.getElementById("result"). innerHTML += `Addition: ${num1}+${num2}= ${sum}<br>`;
+let difference = num1-num2;
+document. getElementById("redult"). innerHTML +=`substraction :${num1}-${num2}=${difference}<br>`;
+let priduct= num1 * num2
+document. getElementById("redult"). innerHTML += multiplication :${ num1} * ${num2} = ${product} <br>`
 </script>
 </body>
 </html>
