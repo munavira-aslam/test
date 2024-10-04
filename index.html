@@ -4,31 +4,36 @@
   <title>JavaScript 
   </title>
 </head>
-
+ 
 <body>
   <h1> JavaScript operators
   </h1>
-  <p> id ="output"
+  
+  <p>Enter a number :
   </p>
-  
+  <input type="text"id="userInput">
+<button onclick"checkNumber">check</button>
+  <p id="output"
+  </p>
+    
   <script>
-  //assignment operators //
-  let x = 10;
-  let y = 6;
-  let z = 4 ;
-  let p = 3;
-  
-  x += 3;
-  y -= 2;
-  z *= 6;
-  p /= 1;
-  document. getElementById("output"). innerHTML+= ` x =${x} <br>`;
-    document. getElementById("output"). innerHTML+=` y = ${y}<br>`;
-  document. getElementById("output"). innerHTML+=`z =${z}<br>`;
-  document. getElementById("output"). innerHTML+= `p=${p}<br>`;
+function = checkNumber(); {
+let userInput=parseFloat(document . getElementById("userInput").value) ;
+if userInput>10
+{
+  document. getElementById("output"). innerHTML =`${userInout}is grater than 10`;
+}
+else if userInput<10
+{
+document. getElementById("output"). innerHTML=`${userInput}is less than 10`;
+}
+else userInput =10
+{
+document. getElementById("oitput"). innerHTML=`${userInput} is equal to 10`;
+}
+}
 
 </script>
 </body>
 </html>
 </DOCTYPE html>  
-</html>
