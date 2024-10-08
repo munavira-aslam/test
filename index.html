@@ -1,39 +1,88 @@
-<DOCTYPE html>
-<html>
-  <head>
-    <title>Shopping world
-    </title>
-
-  </head>
-  <body>
-    <div class="header">
-      <p class="logo">Shopping world
-      </p>
-      <div class="cart"><i class="fa-solid fa-cart-shopping"></i> 
-      <p id="count">0
-      </p></div>
-    </div>
-    <div class="container">
-          <div id="root"></div>
-          <div class="sidebar"></div>
-          <div class="head"><p>My cart
-          </p></div>
-           <div id="cartItem">your Cart item is empty 
-           </div>
-           <div class="foot">
-           </div>
-           <h3>Total 
-           </h3>
-           <h2 id="total">₹ 0.00
-           </h2>
-           
-    </div>
-
-    <script src="game.js"
-    </script>
-  </body>
+*{
+  margin :0;
+  padding : 0;
+  box-sizing :border box;
+  font family : 'poppins',sans serif;
+  font-size : 18 px
+}
+body{
+  display : flex;
+  algin item : center;
+  justify content : center
+  flex-direction : column ;
+}
+.header{
+  height:80 px
+  width :72%;
+  background colour: light red;
+  border radius: 3px;
+  margin : 30px 0px;
+  display :flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:15px;
+}
+.header.Shopping world{
+  font-size:30px;
+  font-weight: bold;
+  color :white;
+}
+.cart{
+display: flex ;
+background color :pale yellow ;
+justify-content:space-between;
+align-items:center;
+padding:7px 10px;
+border- radius:3px ;
+width:80px
+}
+.fa-solid{
+  color:goldenrod ;
+}
+.cart p{
+  height:22px;
+  width:22px
+  disolay:flex;
+  align-items:center;
+  justify-content:center;
+  birder-radius:22px;
+  background-color:pale yellow ;
+  color:white;
+}
+.container
+{
+ display : flex;
+ widtg:70%;
+ margin-bottom :30px;
+ #root{
+   width:60px;
+   display:grid;
+   grid-template-column:repeat(2,ifr);
+   grid-gap:20px;
+ }
+ .slidebar{
+    width: 40%;
+    border-radius:5px;
+    background-color:paleyellow;
+     margin-left:20px;
+     padding :15px;
+     text-align:center;
+  }
+.head{
+  background-color:goldenrod;
+  border-radius:3px;
+  height:40px;
+  padding:10px;
+  margin-bottom: 20px;
+  color: white;
+  display: flex ;
+  align-items: center;
+}
+.foot{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px, 0px;
+  padding: 10px, 0px;
+  border-top:1px solid#333;
   
-</html>
-  
-
-</DOCTYPE html>
+}
