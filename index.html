@@ -1,88 +1,49 @@
-*{
-  margin :0;
-  padding : 0;
-  box-sizing :border box;
-  font family : 'poppins',sans serif;
-  font-size : 18 px
-}
-body{
-  display : flex;
-  algin item : center;
-  justify content : center
-  flex-direction : column ;
-}
-.header{
-  height:80 px
-  width :72%;
-  background colour: light red;
-  border radius: 3px;
-  margin : 30px 0px;
-  display :flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:15px;
-}
-.header.Shopping world{
-  font-size:30px;
-  font-weight: bold;
-  color :white;
-}
-.cart{
-display: flex ;
-background color :pale yellow ;
-justify-content:space-between;
-align-items:center;
-padding:7px 10px;
-border- radius:3px ;
-width:80px
-}
-.fa-solid{
-  color:goldenrod ;
-}
-.cart p{
-  height:22px;
-  width:22px
-  disolay:flex;
-  align-items:center;
-  justify-content:center;
-  birder-radius:22px;
-  background-color:pale yellow ;
-  color:white;
-}
-.container
-{
- display : flex;
- widtg:70%;
- margin-bottom :30px;
- #root{
-   width:60px;
-   display:grid;
-   grid-template-column:repeat(2,ifr);
-   grid-gap:20px;
- }
- .slidebar{
-    width: 40%;
-    border-radius:5px;
-    background-color:paleyellow;
-     margin-left:20px;
-     padding :15px;
-     text-align:center;
-  }
-.head{
-  background-color:goldenrod;
-  border-radius:3px;
-  height:40px;
-  padding:10px;
-  margin-bottom: 20px;
-  color: white;
-  display: flex ;
-  align-items: center;
-}
-.foot{
-  display: flex;
-  justify-content: space-between;
-  margin: 20px, 0px;
-  padding: 10px, 0px;
-  border-top:1px solid#333;
-  
-}
+<html>
+<head>
+  <title>Products</title>
+</head>
+<body>
+    <!--Tab to edit-->
+  <div id="main_div"></div>
+
+  <script>
+    const products = [
+      { name: "Apple Watch", price: 1200, image: "https://placehold.co/400" },
+      { name: "Apple iPhone", price: 12000, image: "https://placehold.co/400" },
+      { name: "Apple MacBook", price: 2400, image: "https://placehold.co/400" }
+    ];
+
+    const mainDiv = document.getElementById("main_div");
+
+    for (let i = 0; i < products.length; i++) {
+      // Create a container for each product
+      const productDiv = document.createElement("div");
+
+      // Create and append the product name
+      const nameSpan = document.createElement("span");
+      nameSpan.textContent = products[i].name;
+      productDiv.appendChild(nameSpan);
+
+      // Create and append the product price
+      const priceSpan = document.createElement("span");
+      priceSpan.textContent = "Price: $" + products[i].price;
+      productDiv.appendChild(priceSpan);
+      
+      const buyButton=document. createElement('button');
+      buyButton. textContent='Buy now';
+      productDiv. appendChild(buyButton);
+
+      // Create and append the product image
+      const img = document.createElement("img");
+      img.src = products[i].image;
+      img.alt = products[i].name;
+      img.style.width = "150px"; // Adjust the image size as needed
+      productDiv.appendChild(img);
+
+      // Append the productDiv to the main div
+      mainDiv.appendChild(productDiv);
+      
+    }
+  </script>
+</body>
+</html>
