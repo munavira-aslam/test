@@ -1,49 +1,83 @@
+<DOCTYPE html>
 <html>
-<head>
-  <title>Products</title>
-</head>
-<body>
-    <!--Tab to edit-->
-  <div id="main_div"></div>
-
-  <script>
-    const products = [
-      { name: "Apple Watch", price: 1200, image: "https://placehold.co/400" },
-      { name: "Apple iPhone", price: 12000, image: "https://placehold.co/400" },
-      { name: "Apple MacBook", price: 2400, image: "https://placehold.co/400" }
-    ]; 
-
-    const mainDiv = document.getElementById("main_div");
-
-    for (let i = 0; i < products.length; i++) {
-      // Create a container for each product
-      const productDiv = document.createElement("div");
-
-      // Create and append the product name
-      const nameSpan = document.createElement("span");
-      nameSpan.textContent = products[i].name;
-      productDiv.appendChild(nameSpan);
-
-      // Create and append the product price
-      const priceSpan = document.createElement("span");
-      priceSpan.textContent = "Price: $" + products[i].price;
-      productDiv.appendChild(priceSpan);
-      
-      const buyButton=document. createElement('button');
-      buyButton. textContent='Buy now';
-      productDiv. appendChild(buyButton);
-
-      // Create and append the product image
-      const img = document.createElement("img");
-      img.src = products[i].image;
-      img.alt = products[i].name;
-      img.style.width = "150px"; // Adjust the image size as needed
-      productDiv.appendChild(img);
-
-      // Append the productDiv to the main div
-      mainDiv.appendChild(productDiv);
-      
+  <head >
+    <title>
+hello my world
+    </title>
+    <style>
+   .bluebtn{
+     background-color: red
+   }
+   #my{background-color: blue}
+   
+    nav{display: flex;
+    background-color: #987;
+    padding: 1em
+    text-align:center;}
+    nav li{display: inline-block;
+      border-right: 2px solid#bbb;
     }
-  </script>
-</body>
+    
+    nav ul{
+      position: sticky;
+      list-style: none;
+      margin: 0;
+    padding: 0;}
+    nav a:hover { color: #ccc;}
+    .active{background-color: #568;}
+    nav ul ul{ display :none,}
+    
+    </style>
+      
+    <link rel=stylesheet href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css'>
+    
+  </head >
+  <body>
+    <h1 id=my>Msc botany 
+    </h1>
+    <p><button class="btn btn-danger" type="submit">Submit</button>
+      <header>
+        <div class="logo">
+  <img src="https://images.app.goo.gl/ADpVpzew6Wpy5cHi6" alt="botany logo">
+  </img><br><br>
+</div>
+        <nav>
+          <ul>
+<li><a href="#">home </a>
+
+  
+</li>
+<li><a href="#">about </a>
+</li>
+<li><a href="#">New</>
+;</li>
+  <!--Tab to edit-->
+</ul>
+<li><a href="#">contact</a>
+<li><a href="#">services</a>
+  <!--Tab to edit-->
+</li>
+</li>
+          </ul>
+        </nav><br>
+      </header>
+     
+      <img src="https://www.geeksforgeeks.org/botany/" alt="botany"
+"
+ ">
+      </img ><br><br>
+        <!--Tab to edit-->
+      
+       <a href="(https://www.geeksforgeeks.org/botany/)">please visit this site
+ </a>for more details 
+        <!--Tab to edit-->
+      
+
+      <!--Tab to edit-->
+    </p>
+
+    <!--Tab to edit-->
+  </body>
 </html>
+   <!--Tab to edit-->
+ </DOCTYPE html>
